@@ -17,6 +17,8 @@ const validate = (form) => {
     if (form.email.value === "") {
       errors.push("Email er et påkrævet felt\n");
     }
+    if (!isValidEmail(email)) {
+        alert('Email er ikke i korrekt format.');}
   
     if (form.password.value.length < 5) {
       errors.push("Password skal være på mindst 5 karakterer!\n");
@@ -40,4 +42,9 @@ const validate = (form) => {
   
     return true;
   };
+
+  function isValidEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
   
