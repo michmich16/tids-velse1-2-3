@@ -1,4 +1,4 @@
-// lavet en fucntion og declaret alle input
+// lavet en fucntion og declaret alle inputs
 function validateForm() {
     var name = document.getElementById('fname').value;
     var lastname = document.getElementById('lname').value;
@@ -20,7 +20,7 @@ function validateForm() {
         alert('Tilmelding succesfuld!');
     }
 }
-
+//tjekker email format
 function isValidEmail(email) {
     var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return emailRegex.test(email);

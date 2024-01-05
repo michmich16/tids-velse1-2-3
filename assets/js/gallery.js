@@ -13,7 +13,7 @@ let myForwardButton = document.getElementById("gallery_forward")
 //tilføjet arrowfunction med eventlistener så myForwardButton vil lytte på et klik.
 myForwardButton.addEventListener('click', (e) => {
 
-    //myImageCount vil adder sig f.eks fra 'Dinny-01.jpg' til 'Dinny-02.jpg' osv.
+    //myImageCount vil ændre sig op ad f.eks fra 'Dinny-01.jpg' til 'Dinny-02.jpg' osv.
     myImageCount++;
     
 //hvis myImageCount går over 9 array vil den starte fra 0 igen.
@@ -26,9 +26,9 @@ myForwardButton.addEventListener('click', (e) => {
 let myBackButton =document.getElementById("gallery_back")
 
 myBackButton.addEventListener('click', (e) => {
-
+//myImageCount vil ændre sig ned ad f.eks fra 'Dinny-09.jpg' til 'Dinny-08.jpg' osv.
     myImageCount--;
-
+//hvis myImageCount går over 0 array vil den starte fra 9 igen.
     if(myImageCount < 0) {
         myImageCount = myGallery.length -1
     }

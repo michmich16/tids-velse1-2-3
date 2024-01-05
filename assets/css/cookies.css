@@ -1,9 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: sans-serif;
 }
+
 .noScroll {
     overflow: hidden;
-  }
+}
 
 #Cookie_container {
     color: aliceblue;
@@ -20,7 +26,8 @@ body {
     font-weight: bold;
     transition: 600ms;
 }
-.Cookie_button_selected:hover{
+
+.Cookie_button_selected:hover {
     background-color: rgb(8, 14, 179);
     transition: 400ms;
 }
@@ -36,7 +43,8 @@ body {
     font-weight: bold;
     transition: 600ms;
 }
-.Cookie_button_all:hover{
+
+.Cookie_button_all:hover {
     background-color: rgb(0, 90, 192);
     transition: 400ms;
 }
@@ -59,7 +67,7 @@ body {
     margin: auto;
 }
 
-.modal div section{
+.modal div section {
     padding-bottom: 1rem;
 }
 
