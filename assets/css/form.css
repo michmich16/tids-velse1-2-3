@@ -8,12 +8,12 @@ body{
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
   }
 
   .myform label{
     font-size: 0.8rem;
     margin: 0 0.5rem;
+    padding: 0.5rem 0;
 
   }
   .myform input{
@@ -28,8 +28,9 @@ body{
   /* BUTTON STYLING */
   .myform input[type=submit]{
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     padding: 0.6rem;
-    background-color: greenyellow;
+    background-color: rgb(37, 199, 29);
     color: black;
     border: none;
     cursor: pointer;
