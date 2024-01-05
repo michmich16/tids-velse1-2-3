@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tidsøvelse 1</title>
     <link rel="stylesheet" href="/assets/css/form.css">
-    <script src="/assets/js/form.js" defer></script>
+    <script src="/assets/js/validation.js" defer></script>
 </head>
 <body>
     
-      <!-- CLOSING  BUTTON -->
-          <div id="modalContent">
                 <!-- HER STARTER FORMEN (BEMÆRK: "novalidate" SKAL FJERNES ;0) -->
-                <form action="" novalidate onsubmit="return validate(this);" class="myform">
-                    <fieldset>
-                    <legend>Simpel formValidering</legend>
+                <form id="MyForm" action="" novalidate onsubmit="return validateForm(this);" class="myform">
                         <label for="fname">Fornavn</label>
                         <input type="text" id="fname" name="fname" required placeholder="Type Your First Name" />
 
@@ -29,9 +25,7 @@
 
                         <label for="confirmpassword">Gentag Password:</label>
                         <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Type Your Name" />
-                        <input type="submit" value="Submit" />
-                </fieldset>
+                        <input type="submit" value="Tilmeld" />
                 </form>
-          </div>
 </body>
 </html>

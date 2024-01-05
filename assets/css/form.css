@@ -1,31 +1,36 @@
+body{
+    font-family: sans-serif;
+}
 .myform{
-    background-color: var(--black);
-    color: var(--light);
-  }
-  /* "FIELDSETTET" ER "FLEXCONTAINEREN I DETTE TILFÆLDE" */
-  .myform fieldset{
+    background-color: #33333333;
+    color: black;
+    border: solid 4px black;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
-  .myform legend{
-    font-size: 1.2rem;
-  }
+
   .myform label{
     font-size: 0.8rem;
+    margin: 0 0.5rem;
+
   }
   .myform input{
     padding: 0.3rem;
+    margin: 0 0.5rem;
+    border: solid 2px black;
+    border-radius: 8px;
   }
   .myform input::placeholder{
-    color: var(--medium);
+    color: grey;
   }
   /* BUTTON STYLING */
   .myform input[type=submit]{
     margin-top: 0.5rem;
     padding: 0.6rem;
-    background-color: var(--active);
-    color: var(--static);
+    background-color: greenyellow;
+    color: black;
     border: none;
     cursor: pointer;
     filter: saturate(0.6);
